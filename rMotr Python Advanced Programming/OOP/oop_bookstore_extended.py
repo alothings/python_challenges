@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 ''' Object Oriented Programming
-Implementation fo simple bookstore
-Create methods for search_books( title or author
-
+Implementation of simple bookstore
+Extending the previous BookStore to include comparison methods.
+Two authors are the same if their name and nationality are the same:
 '''
 
 
