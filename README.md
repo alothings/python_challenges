@@ -2,11 +2,16 @@
 
 ## 1. Hacker Rank Challenges
 
-Hacker Rank 30 Day Challenge
+Hacker Rank 30 Day Challenge Problems
 Additional Problems
 
-## 2. Python Problems from CodeWars
+## 2. Python Practice Problems from CodeWars
 
 Set of problems from CodeWars
 
-## 3. rMotr Python Advanced Programming Bootcamp
+## 3. rMotr Advanced Python Bootcamp
+
+Collections
+Generators and Iterators 
+Object Oriented Programming
+
