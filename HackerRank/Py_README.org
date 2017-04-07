@@ -1,0 +1,21 @@
+#+STARTUP: hidestars
+#+STARTUP: indent
+
+* Day 28: RegEx, Patters and Intro to Databases
+
+** Task:
+Consider Database table: Emails
+Attributes: First Name, Email ID
+Given N rows of data, simulating the emails table.
+Print alphabetically a list of people whose emails end in @gmail.com
+
+*** Input 
+- First line N, 
+- Then N lines containing 2 strings separated by space.
+*** Solution:
+Easy use of regex, if re.search(patter,str,0): append to list.
+
+* Day 29 (30): Bitwise AND 
+** 
+
+
