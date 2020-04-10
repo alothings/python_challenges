@@ -1,4 +1,10 @@
-# Python Programming Practice
+# Python Training Repo
+
+## Repo Structure
+
+- algoExperts.io
+- hackerrank
+- rMotr Bootcamp
 
 ## 1. Hacker Rank Challenges
 
