@@ -1,0 +1,40 @@
+#+STARTUP: hidestars
+#+STARTUP: indent
+
+* Functional programming facilitated by:
+
+** Map
+Applies a function t all items in input_list:
+map(function_to_apply, list_of_inputs)
+
+Examples:
+#+BEGIN_SRC python
+items = [1, 2, 3, 4]
+squared = list(map(lambda x: x**2, items))
+#+END_SRC
+
+** Lambda Operator
+lambda arguments: expression
+
+
+** Filter
+filter(function, iterable)
+Construct an iterator from elements for which a function returns true
+
+#+BEGIN_SRC python
+number_list = range(-5, 5)
+less_than_zero = list(filter(lambda x: x < 0, number_list))
+print(less_than_zero)
+# Output: [-5, -4, -3, -2, -1]
+#+END_SRC
+
+** Reduce
+Now in functools
+functools.reduce(function, iterable[, initializer])
+Applies function to two arguments cumulatively to items of sequence from
+left to right. Example:
+
+#+BEGIN_SRC python
+reduce(lambda x, y: x+y, [1, 2, 3, 4, 5)
+# Caulculates: ((((1+2)+3)+4)+5)
+#+END_SRC

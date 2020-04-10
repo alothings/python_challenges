@@ -1,21 +1,31 @@
 # Python Training Repo
 
+Repo with training material using Python
+
 ## Repo Structure
 
-- algoExperts.io
-- hackerrank
-- rMotr Bootcamp
+```
+.
+├── algo_experts
+├── hacker_rank
+├── codewars
+└── rMotr_python_advanced
+    ├── Collections
+    ├── Generators_and_Iterators
+    └── OOP
+```
 
-## 1. Hacker Rank Challenges
+
+## Hacker Rank Challenges
 
 Hacker Rank 30 Day Challenge Problems
 Additional Problems
 
-## 2. Python Practice Problems from CodeWars
+## Python Practice Problems from CodeWars
 
 Set of problems from CodeWars
 
-## 3. rMotr Advanced Python Bootcamp
+## rMotr Advanced Python Bootcamp
 
 Collections
 Generators and Iterators 

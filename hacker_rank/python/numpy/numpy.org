@@ -1,0 +1,33 @@
+#+STARTUP: hidestars
+#+STARTUP: indent
+
+* Numpy Intro
+** Creating arrays
+import numpy as np
+wines = np.array(wines[1:}, dtype=np.float)
+
+In[8]:
+empty_array = np.zeros((3,4))
+empty_array
+
+Out[8]:
+array([[ 0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.]])
+
+** Reading text files
+wines = np.genfromtxt("file.csv", delimiter=",", skip_header=1)
+
+** Array indexing
+Numpy is zero-indexed
+
+** Slicing Numpy arrays:
+wines[0:3, 3] is wines[rows:cols], so it outputs elements of rows [0,3) of the 4th col..
+wines[:, 3] outputs elements from all the rows belonging to the 4th column.
+
+
+** Array math
+** Array methods
+** Array comparisong and filtering
+** Reshaping and combining arrays
+nd the inde

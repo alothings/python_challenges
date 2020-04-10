@@ -1,0 +1,34 @@
+"""
+Task:
+Given a complex number z, convert to polar coordinates
+
+Input: A line containing: z
+Example: 1+2j 
+
+Output: Polar coordinates (r, angle), r = (x^2 + y^2)^1/2, 
+angle = phase(complex(x, y))
+2.236...
+1.107...
+"""
+
+import cmath
+import math
+
+
+def convert_to_polar(x, y):
+    r = math.sqrt(x*x + y*y)
+    angle = cmath.phase(complex(x, y))
+    print(r)
+    print(angle)
+
+
+def complex_to_polar(z):
+    x = z.real
+    y = z.imag
+    return x, y
+
+
+if __name__ == '__main__':
+    z = complex(input())
+    x, y = complex_to_polar(z)
+    convert_to_polar(x, y)

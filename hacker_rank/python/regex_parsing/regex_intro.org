@@ -1,0 +1,88 @@
+#+STARTUP: hidestars
+#+STARTUP: indent
+
+* Regular Expressions
+Provides regular expression matching operations.
+('\') backslash used to indicate special forms or special characters to be used without invoking their special emaning.
+
+Python's raw string notation so backslashes are not handled in any special way by starting with 'r'. So r"\n" is a two character string, while "\n" is newline.
+
+** Syntax 
+
+. matches any character except newline
+^ matches the start of the string
+$ matches the end of a string
+'*' causes RE to match 0 or more repetitions of the preceding RE
+  ab* matches a, ab, abbbbb
++ causes RE to match 1 or more repetitions
+? 0 or 1 repetition
+{m} exactly m copies
+{m,n} from m to n repetitions 
+[] to indicate a set of characters
+  [a-z] or [0-9A-Fa-f] for hexadecimals
+'|' a | b matches either a or b. 
+
+
+\w for unicode (str) patters, matches word characters
+\W matches any character which is not a Unicode word char
+\Z matches only at the end of the string
+
+*** Assertions:
+^
+$
+/b
+/B
+?=   Lookahead
+?!   Negative Lookahead
+?<=  Lookbehind
+?<!  Negative Lookbehind
+
+** Module Contents
+*** re.compile(pattern, flags=0)
+Compile a regex patter into a regular expression object, which can be used for matching using its match() or search() methods.
+
+prog = re.compile(pattern)
+result = prog.match(string)
+
+which is the same to
+result = re.match(pattern, string)
+
+*** re.search(pattern, string, flags=0)
+scan through string. Looks for first location where regex patter is produce. Returns a *match object* or None
+
+**** Match Objects:
+always have boolean value of True, since match() and search() return None otherwise. 
+
+Methods and attributes:
+***** match.expand()
+***** match.group([group1,..]) returns one or more subgroups of the match. If there is a single argument, the result is a single string.
+
+#+BEGIN_SRC python
+m = re.match(r"(\w+) (\w+)", "Isaac Newton, physicist")
+m.group(0)       # The entire match
+'Isaac Newton'
+m.group(1)       # The first parenthesized subgroup.
+'Isaac'
+m.group(2)       # The second parenthesized subgroup.
+'Newton'
+m.group(1, 2)    # Multiple arguments give us a tuple.
+('Isaac', 'Newton')
+#+END_SRC
+
+***** match.groups(default=None)
+returns tuple containing all the subgroups of the match
+
+#+BEGIN_SRC python
+>>> m = re.match(r"(\d+)\.(\d+)", "24.1632")
+>>> m.groups()
+('24', '1632')
+
+#+END_SRC
+
+*** re.match(pattern, string, flags=0)
+If zero or more characters at the beginning of string match the reg expression patter, it returns the match object. Returns none if the string does not match the pattern.
+Note: Different from zero-length match
+
+** Resources:
+https://www.shortcutfoo.com/app/dojos/regex/cheatsheet
+

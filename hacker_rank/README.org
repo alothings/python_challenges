@@ -1,0 +1,26 @@
+* HackerRank Solutions in Python
+
+Repository with solutions to a number of tracks such as:
+- Python
+- Data Structures
+- Algorithms
+- Cracking the Coding Interview
+- Contests
+
+** Python Track items to complete
+- c Intro
+- Data Types
+- Strings
+- c Sets
+- c Math
+- c Itertools
+- c Collections
+- c Date and Time
+- c Errors and Exceptions
+- c Classes
+- c Built-ins
+- c Python functionals (map, filter, reduce)
+- Regex and Parsing
+- c XML
+- c Closures and Decorators
+- c Numpy
